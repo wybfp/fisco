@@ -1,0 +1,32 @@
+[INFO] [2019-11-15 12:35:01] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@701fc37a: startup date [Fri Nov 15 12:35:01 CST 2019]; root of context hierarchy
+[INFO] [2019-11-15 12:35:02] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2019-11-15 12:35:04] ChannelConnections.init(366) |  add connected node: 127.0.0.1:20200
+[INFO] [2019-11-15 12:35:05] ChannelConnections.reconnect(503) | try connect to: 127.0.0.1:20200
+[INFO] [2019-11-15 12:35:05] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 388731659
+[INFO] [2019-11-15 12:35:06] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 542fa58367044465819640794dc4d08f, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2019-11-15 12:35:06] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-11-15 12:35:06] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-11-15 12:35:06] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=2, nodeVersion=2.1.0, EnumProtocol=VERSION_2]
+[INFO] [2019-11-15 12:35:06] ConnectionCallback.subBlockNotification(338) |  send sub block notification request, seq: c87d2bc39de14264b31ecc6e182119e8, content: ["_block_notify_1"]
+[INFO] [2019-11-15 12:35:06] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: 20abe37c2cb04650bd1b49391765b06c, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2019-11-15 12:35:06] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 0 
+[INFO] [2019-11-15 12:35:16] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:35:26] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:35:36] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:35:46] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:35:56] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:36:06] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:36:16] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:36:26] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:36:36] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:36:46] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:36:56] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:37:06] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:37:16] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:37:26] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:37:36] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:37:46] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:37:56] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0
+[INFO] [2019-11-15 12:38:06] EventLogFilterManager$1.run(154) |  event filter manager, filter: 0, callback: 0

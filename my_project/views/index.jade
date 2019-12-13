@@ -1,0 +1,116 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type="text/javascript",src="/javascripts/index.js")
+  body
+    h1= "Fisco Bcos"
+    img(src="/images/Logo.svg" alt="none" width="300" height="80")
+    p=title
+    if isDeploy
+      div
+        button(onclick="deploy()") 部署
+    else
+      div
+        button(onclick="back()") 返回
+        button(onclick="home()") 首页
+      div
+        p 注册
+        button(onclick="addCompany()") 厂家
+        button(onclick="addBank()") 银行
+      div
+        p 基本功能
+        button(onclick="fun1()") 功能1
+        button(onclick="fun2()") 功能2
+        button(onclick="fun3()") 功能3
+        button(onclick="fun4()") 功能4
+        button(onclick="fun5()") 功能5
+      div
+        p 打印
+        button(onclick="listCompany()") 打印厂家
+        button(onclick="listBank()") 打印银行
+        button(onclick="listReceipt()") 打印账单
+    div
+      case choices
+        when 0
+          p 0
+        when 1
+          p 注册商家，请输入名称
+          form(action="/addCompany", method="get")
+            input(type="text",name="cname")
+            br
+            br
+            input(type="submit", value="提交")
+        when 2
+          p 注册银行，请输入名称
+          form(action="/addBank", method="get")
+            input(type="text",name="cname")
+            br
+            br
+            input(type="submit", value="提交")
+        when 3
+          p 功能1：a向b支付c元
+          form(action="/fun1", method="get")
+            label a
+            input(type="text",name="a")
+            br
+            label b
+            input(type="text",name="b")
+            br
+            label c
+            input(type="text",name="c")
+            br
+            br
+            input(type="submit", value="提交")
+        when 4
+          p 功能2：a 把 b 欠的 d元 转让给 c
+          form(action="/fun2", method="get")
+            label a
+            input(type="text",name="a")
+            br
+            label b
+            input(type="text",name="b")
+            br
+            label c
+            input(type="text",name="c")
+            br
+            label d
+            input(type="text",name="d")
+            br
+            br
+            input(type="submit", value="提交")
+        when 5
+          p 功能3：a 向银行 b 借 c元
+          form(action="/fun2", method="get")
+            label a
+            input(type="text",name="a")
+            br
+            label b
+            input(type="text",name="b")
+            br
+            label c
+            input(type="text",name="c")
+            br
+            br
+            input(type="submit", value="提交")
+        when 6
+          p 功能4：所有a欠的钱还清
+          form(action="/fun2", method="get")
+            label a
+            input(type="text",name="a")
+            br
+            br
+            input(type="submit", value="提交")
+        when 7
+          p 功能5：所有欠a的钱清零
+          form(action="/fun5", method="get")
+            label a
+            input(type="text",name="a")
+            br
+            br
+            input(type="submit", value="提交")
+        default
+          p FISCO BCOS
+
+
